@@ -1,0 +1,26 @@
+site_name: AI-Playtesting
+theme:
+  name: material
+  features:
+    # - navigation.tabs
+    - navigation.expand
+  logo: images/logo.png
+  favicon: images/logo.png
+  icon:
+    repo: fontawesome/brands/github
+nav:
+  - introduction.md
+  - Game:
+    - page2.md
+  - AI:
+    - page1.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AIPlaytesting/AIPA
+  generator: false
+
+copyright: Copyright &copy; 2020 AI-Playtesting
+
+repo_url: https://github.com/AIPlaytesting/AIPA
