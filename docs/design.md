@@ -24,7 +24,7 @@ Conversion notes:
 
 # Design
 
-## First Half: Provide scenarios for the development team to make the AI
+## Provide scenarios for the development team to make the AI
 
 Our goal is to make an AI playtest agent that could learn to play a turn-based card game and provide valuable feedback to the game designer.
 

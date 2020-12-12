@@ -1,0 +1,923 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../images/logo.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Week 5 : More Experiments - AI-Playtesting</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-5-more-experiments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="AI-Playtesting" class="md-header-nav__button md-logo" aria-label="AI-Playtesting">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            AI-Playtesting
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Week 5 : More Experiments
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/AIPlaytesting/AIPA/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI-Playtesting" class="md-nav__button md-logo" aria-label="AI-Playtesting">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    AI-Playtesting
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/AIPlaytesting/AIPA/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../introduction/" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../demo/" class="md-nav__link">
+      Demo
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../guide/" class="md-nav__link">
+      App Instructions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../ai/" class="md-nav__link">
+      AI
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../takeaways/" class="md-nav__link">
+      Takeaways
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    <label class="md-nav__link" for="nav-6">
+      Game Dev along with AI
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Game Dev along with AI" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Game Dev along with AI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/Overview/" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2" >
+    <label class="md-nav__link" for="nav-6-2">
+      Topics
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Topics" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-2">
+        <span class="md-nav__icon md-icon"></span>
+        Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/Architecture/" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/Unity/" class="md-nav__link">
+      Unity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/Build/" class="md-nav__link">
+      Build of Multiple Frameworks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/DataVisualization/" class="md-nav__link">
+      Data visualization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/DesktopGUI/" class="md-nav__link">
+      Desktop GUI for designers
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../game/Summary/" class="md-nav__link">
+      Summary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../design/" class="md-nav__link">
+      Design
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
+    <label class="md-nav__link" for="nav-8">
+      Blog
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Blog" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Blog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../week1/" class="md-nav__link">
+      Week 1 : Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../week2/" class="md-nav__link">
+      Week 2 : First Version
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../week3/" class="md-nav__link">
+      Week 3 : The Card Game
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../week4/" class="md-nav__link">
+      Week 4 : Dawn Of The AI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Week 5 : More Experiments
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Week 5 : More Experiments
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#experiments-with-the-ai" class="md-nav__link">
+    Experiments with the AI
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiments with the AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reward-calculation-modifications" class="md-nav__link">
+    Reward Calculation Modifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-action-functionality" class="md-nav__link">
+    Choosing Action Functionality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curse-of-dimensionality-high-number-of-states" class="md-nav__link">
+    Curse of Dimensionality (High Number Of States)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unity-front-end" class="md-nav__link">
+    Unity Front End
+  </a>
+  
+    <nav class="md-nav" aria-label="Unity Front End">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    Challenges
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    Solution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playback-system-in-unity" class="md-nav__link">
+    Playback System in Unity
+  </a>
+  
+    <nav class="md-nav" aria-label="Playback System in Unity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playback-tool-based-on-current-architecture" class="md-nav__link">
+    Playback Tool based on Current Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactoring-the-data-management-module" class="md-nav__link">
+    Refactoring the Data Management Module
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../week6/" class="md-nav__link">
+      Week 6 : A Small Breakthrough
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../week7/" class="md-nav__link">
+      Week 7 : A Little Bit of Success
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#experiments-with-the-ai" class="md-nav__link">
+    Experiments with the AI
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiments with the AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reward-calculation-modifications" class="md-nav__link">
+    Reward Calculation Modifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-action-functionality" class="md-nav__link">
+    Choosing Action Functionality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curse-of-dimensionality-high-number-of-states" class="md-nav__link">
+    Curse of Dimensionality (High Number Of States)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unity-front-end" class="md-nav__link">
+    Unity Front End
+  </a>
+  
+    <nav class="md-nav" aria-label="Unity Front End">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    Challenges
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    Solution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playback-system-in-unity" class="md-nav__link">
+    Playback System in Unity
+  </a>
+  
+    <nav class="md-nav" aria-label="Playback System in Unity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playback-tool-based-on-current-architecture" class="md-nav__link">
+    Playback Tool based on Current Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactoring-the-data-management-module" class="md-nav__link">
+    Refactoring the Data Management Module
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/AIPlaytesting/AIPA/edit/master/docs/blogs/week5.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="week-5-more-experiments">Week 5 : More Experiments</h1>
+<p>As the title suggests, this week involved a lot of experiments. The bad news is that the AI is still not close to performing optimally. We have not been able to achieve convergence in any of our experimental setups yet. However, on the positive side, we are getting closer to having a graphical interface for playing the game (one boss fight of Slay the Spire). Once this is up, we can send this out to others to test and it can help us visualize how the AI is playing our game. We are adding a replay and recording functionality into the graphical interface to achieve this. Additionally, we identified a few bugs in our game and dedicated some time to fix them as well.</p>
+<h2 id="experiments-with-the-ai">Experiments with the AI</h2>
+<h3 id="reward-calculation-modifications">Reward Calculation Modifications</h3>
+<p>The week started with us making an important change to the AI which involved updating the reward function to manually calculate the rewards of certain cards that involve buffs (Flex, Double Tap, Disarm, Clothesline) and a couple of block cards (Defend, Shrug It Off, Iron Wave). There is a base positive reward for every point of damage done. Since these cards do not deal damage directly, it makes sense to calculate through backtracking their effectiveness.</p>
+<ul>
+<li>Flex – Playing the flex card gains reward equal to 50% of damage done by attacks played after it in the same turn. This provides an incentive to play it as early as possible. ‘50%’ sure seems high but keep in mind that Flex is a zero cost card hence the value obtained from this card is quite high (thinking about value in terms of damage/energy use).</li>
+<li>Double Tap – Gains reward equal to 50% of the damage dealt by the next attack played.</li>
+<li>Disarm – Gains reward proportional to the instances of boss damage (throughout the remainder of the game) after this card was played.</li>
+<li>Clothesline – Gains reward proportional to the amount of boss damage inflicted on the player in the next two turns after this card has been played.</li>
+<li>Defend / Shrug It Off / Iron Wave – Gains reward proportional to the amount of block used (calculated by looking at the next boss turn after playing this card). Block used is the actual block value that mitigated damage from the boss.</li>
+</ul>
+<p>These reward modifications did not yield any favorable results at first glance which led us to drop them completely in successful experiments. However, we do think that the code used to do these reward modifications can be useful sometime in the future since it is a good way for us to calculate a card’s effectiveness.</p>
+<h3 id="choosing-action-functionality">Choosing Action Functionality</h3>
+<p>The next big thing that we tried this week involved modifying the way the actions were being chosen out of the array of q-values generated by the AI prediction process.</p>
+<p><strong>Earlier</strong>, the way of choosing the best action was to look at the predicted q-values for each card and then choose the card with the highest q-value AND was playable. One of the reasons this could be a potential problem is that the neural network is unaware of this mechanism for the choice of cards and hence it makes predictions believing that all cards are available for it to play. Logically there is an obvious flaw here. However, this effect is even more pronounced when considering the Q-Learning rule for estimating reward ( q(s,a) = reward + max a’ q(s’,a’) ). In words, the equation states that the expected reward from taking action a (playing a card) in state s (the current game state) is equal to the immediate reward from playing the card added to the maximum q-value possible for the next state. Hence, when the AI tries to predict q-values, it assumes that even in the next state, all cards are available to play. This has an inflating effect on the q-values and we have seen q-values accelerating to very high numbers.</p>
+<p>To fix this, we now force the neural network to choose an action that is playable in the given state. We do this by giving a negative reward when the neural network attributes the highest q-value to a card that is unplayable in the given state. By doing this, the neural network is forced to pick a card that is playable. This has its own set of challenges but for now we are experimenting more in this direction.</p>
+<h3 id="curse-of-dimensionality-high-number-of-states">Curse of Dimensionality (High Number Of States)</h3>
+<p>Although we are breaking down the game state into a few variables (around 100) with discrete values, the complexity of this task has a lot to do with the high number of possible states. Right now we know that there two things for sure:</p>
+<ul>
+<li>AI Agent is unable to find the best strategy to play the game</li>
+<li>AI Agent is unable to optimize the card play order in each turn</li>
+</ul>
+<p>One of the reasons for this could be that it will take a high number of games for the AI to visit enough different states to converge. Right now, it takes about an hour to play 1000 games (each game has multiple turns and each turn has multiple card play steps).</p>
+<p>One of the things that we are looking at right now is feature engineering. Is there a clever way to extract important information from the game state and represent it in a fewer number of states? The following is what we are looking at:</p>
+<ul>
+<li><strong>Generalize card states by changing different cards to only genre of cards (Card’s name → Genre of the cards):</strong> Instead of checking for cards on the player’s hand, we only check how many attack cards, how many block cards and how many buff cards are on player’s hand.</li>
+<li><strong>Player/Boss Buffs:</strong> Maybe this does not impact the game state too much and we can remove this altogether.</li>
+</ul>
+<h2 id="unity-front-end">Unity Front End</h2>
+<p>Last week we built a unity front-end system which can only render a static scene. Since animation is so important for players to know what is happening, we added animations to our front end this week!</p>
+<p><img alt="" src="/images/week5_unity_graphics.png" /></p>
+<h3 id="challenges">Challenges</h3>
+<p>In a normal unity game, adding animation is easy since we can easily get references to all gameobject instances we want for animations. But since our game is running in python, <strong>all the object instances are stored in python runtime.</strong> An object instance sharing mechanism is hard to fit into our current request/response architecture between C#/C++.</p>
+<h3 id="solution">Solution</h3>
+<p>We extended our “markup-language” to support animation. All the markups in one “game sequence markup file”  share the same ID space, so they can find instance by those ID. The flow of this is shown below.</p>
+<p><img alt="" src="/images/week5_markup.png" /></p>
+<h2 id="playback-system-in-unity">Playback System in Unity</h2>
+<p>As mentioned in the introduction above, we need a playback system in Unity in order to watch replays of games played by the AI (or humans). This tool can be incredible useful to us because:</p>
+<ul>
+<li><strong>Store valuable information permanently</strong> : Previously we didn’t have efficient ways to store how AI/players play the game but with this system, we can store records as along as we version them and have backward compatibility.</li>
+<li><strong>Clear graphical visualization</strong> : Even a single minute of AI’s gameplay generates hundreds of lines of logs which are hard to read. With graphical interface, life would be easier in evaluating what the AI is doing.</li>
+</ul>
+<h3 id="playback-tool-based-on-current-architecture">Playback Tool based on Current Architecture</h3>
+<p>This week we implemented a playback tool for the reasons cited above that is completely compatible with our current architecture. This includes:</p>
+<ul>
+<li><strong>Font-Backed Rendering System</strong> which completely relies on the game data in markup files.</li>
+<li>Mechanism to <strong>Encode Gameplay Data</strong> into markup files.</li>
+<li>We store the data generated during runtime, and use the same Unity based rendering system to replay it.</li>
+</ul>
+<h3 id="refactoring-the-data-management-module">Refactoring the Data Management Module</h3>
+<p>As part of integrating the python gameplay system with Unity rendering and the replay mechanism, we also implemented a database module to handle game data drawn from markup files. The following are some reasons why we needed to do this:</p>
+<ul>
+<li>Easier for developers to configure and modify data. This is in preparation of the design tools that we are looking to build.</li>
+<li>Decoupling data from gameplay is one of the most important aspects of our original design </li>
+<li>Preparation for game application builds</li>
+</ul>
+<p>The following design considers support for multiple games versions such that each game version’s data is isolated from others. Each game supports multiple decks, and its own rule sets and card set.</p>
+<p>The following is a brief description of what the database module handbook looks like:</p>
+<p><img alt="" src="/images/week5_database_module.png" /></p>
+<h2 id="bug-fixes">Bug Fixes</h2>
+<p>We identified a few bugs this week during manual playtests and AI training. In the previous version, the boss transformed from offensive mode to defensive mode only when it is attacked by more than 30 damages in one round. In the real Slay the Spire, the damage dealt to the enemy for transformation is accumulated since the last transformation.</p>
+<p>In order to fix this, we had to take another look at our game flow and make some changes to it. The following is a representation of how our (cleaned up) current game loop looks like:</p>
+<p><img alt="" src="/images/week5_game-flow-update.png" /></p>
+<p>Although the AI training is still not yielding favorable results, we are learning a lot about the application of reinforcement learning to strategy games. It will surely be fun to watch the AI play in the coming week. We can then judge to see how smart it is!</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../week4/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Week 4 : Dawn Of The AI
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../week6/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Week 6 : A Small Breakthrough
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 AI-Playtesting
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/AIPlaytesting/AIPA" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.expand'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

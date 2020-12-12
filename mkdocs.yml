@@ -25,13 +25,13 @@ nav:
     - game/Summary.md
   - design.md  
   - Blog:
-    - week1.md
-    - week2.md
-    - week3.md
-    - week4.md
-    # - week5.md
-    # - week6.md
-    # - week7.md
+    - blogs/week1.md
+    - blogs/week2.md
+    - blogs/week3.md
+    - blogs/week4.md
+    - blogs/week5.md
+    - blogs/week6.md
+    - blogs/week7.md
     # - week8.md
     # - week9.md
     # - week10.md

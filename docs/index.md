@@ -1,4 +1,4 @@
-## This is AI Playtesting
+## Our Goal
 
 AI Playtesting aims to create an AI that can playtest combat based PVE card games and help balance it. We expect that the AI will identify dominant strategies or unbalanced cards and generate playtest data to help game designers to do the balancing. To do this we choose Slay the Spire as our target game and we are developing our own machine learning algorithm. We will document our findings and experiment through the semester and publish it afterwards. 
 
