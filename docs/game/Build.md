@@ -28,11 +28,14 @@ Even though the final build grew from 250MB into 1.6GB, the plan is much stable 
 ### Build Cross Different Frameworks/Platforms 
 Our project is an example of multiple frameworks and platforms. 
 When we want to distribute our project by binaries, we consider two stages:
+
 1. **Prebuild**:
 First stage is to build all modules in their native platforms, as we discussed in Unity, electron, and python. In our case, our biggest challenge is to build python codes. 
+
 2. **Combination and Communication**:
 When we say combine the build, it's mainly about how to manage the paths, how to read files in the build files. Almost all frameworks(in our case, Unity and Electron) have their own way to get dynamica relative path during runtime, so this is doable.
 As for the communication, because we use socket to do the inter-process communication. As long as we use the right port, the operating system will handle the rest.
+
 ### Develop Mode VS Runtime Mode
 Most frameworks have a way separate codes in development and codes in build. We have the same situation, because the way we find codes in other platforms is different between develop mode and build runtime. 
 

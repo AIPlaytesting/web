@@ -1,6 +1,6 @@
-[unity-arc]:/resources/unity-arc.png
-[unity-render]:/resources/unity-render.png
-[untiy-animation]:/resources/unity-animation.png
+[unity-arc]:resources/unity-arc.png
+[unity-render]:resources/unity-render.png
+[untiy-animation]:resources/unity-animation.png
 # Use Unity To Develop the Player GUI
 ## Key features of  Unity front-end 
 1. **Decoupled front-end** :

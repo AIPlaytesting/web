@@ -1,8 +1,9 @@
-[architecture-pic]:/resources/arc.png
+[architecture-pic]:resources/arc.png
 # Brief Introduction To Architecture
 ## The Requirements
 The demo we present is how we image game development with AI looks like. It is also a complex software with many subsystems.  
 As an software, it need:  
+
 1. **Player can play the game**
 2. **AI can play the game**
 3. **Designer can change the game behaviour**

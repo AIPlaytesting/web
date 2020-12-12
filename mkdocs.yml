@@ -10,10 +10,36 @@ theme:
     repo: fontawesome/brands/github
 nav:
   - introduction.md
-  - Game:
-    - page2.md
-  - AI:
-    - page1.md
+  - demo.md
+  - guide.md
+  - ai.md
+  - takeaways.md
+  - Game Dev along with AI:
+    - game/Overview.md
+    - Topics:
+      - game/Architecture.md
+      - game/Unity.md
+      - game/Build.md
+      - game/DataVisualization.md
+      - game/DesktopGUI.md
+    - game/Summary.md
+  - design.md  
+  - Blog:
+    - week1.md
+    - week2.md
+    - week3.md
+    - week4.md
+    # - week5.md
+    # - week6.md
+    # - week7.md
+    # - week8.md
+    # - week9.md
+    # - week10.md
+    # - week11.md
+    # - week12.md
+    # - week13.md
+    # - week14.md
+    # - week15.md
 
 extra:
   social:
