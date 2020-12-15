@@ -12,8 +12,8 @@ nav:
   - introduction.md
   - demo.md
   - guide.md
-  - ai.md
-  - takeaways.md
+  # - ai.md
+  # - takeaways.md
   - Game Dev along with AI:
     - game/Overview.md
     - Topics:
@@ -32,10 +32,10 @@ nav:
     - blogs/week5.md
     - blogs/week6.md
     - blogs/week7.md
-    # - week8.md
-    # - week9.md
-    # - week10.md
-    # - week11.md
+    - blogs/week8.md
+    - blogs/week9.md
+    - blogs/week10.md
+    - blogs/week11.md
     # - week12.md
     # - week13.md
     # - week14.md
