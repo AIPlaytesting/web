@@ -10,3 +10,7 @@ We created a tool for designers to balance a game called Slay the Spire.
 - Design : build your deck by adding Slay the Spire cards, or even customize your cards.
 - Training : train the AI agent using Deep Reinforcement Learning algorithms.
 - Playtest : let AI playtest and display statistics for identifying imbalance and updating the rules of the game.
+
+## Download Our APP
+
+[Google Drive Link](https://drive.google.com/file/d/1coWv_elDyS0B5nwXGGVA60iGad-53E43/view)

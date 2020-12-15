@@ -7,6 +7,6 @@ Even though we can have highly customized graphics to show our data, building a 
 
 
 ### Javascript Data Visualization Library 
-Javascript has many data visualization libraries. We finally choose d3.js (https://github.com/d3/d3 ) among others  for 2 reasons:
+Javascript has many data visualization libraries. We finally choose d3.js (https://github.com/d3/d3 ) among others for 2 reasons:
 1. Independent: Many other data visualization libraries( such as Victory, Rechard,etc) only work with some front-end frameworks like React and Vue.  d3.js easter to integrate since it only needs javascript
 2. Community resoruces： Many templates and tutorials of d3.js on the internet.
