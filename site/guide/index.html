@@ -186,19 +186,7 @@
 
   <li class="md-nav__item">
     <a href="../introduction/" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../demo/" class="md-nav__link">
-      Demo
+      Introduction Videos
     </a>
   </li>
 
@@ -240,6 +228,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#app-demo-21-minutes" class="md-nav__link">
+    App Demo (21 minutes)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
@@ -275,15 +270,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#challenges-to-playtesters" class="md-nav__link">
     Challenges to playtesters
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -291,6 +286,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ai/" class="md-nav__link">
+      Progress of the AI
+    </a>
   </li>
 
     
@@ -657,6 +664,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#app-demo-21-minutes" class="md-nav__link">
+    App Demo (21 minutes)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
@@ -692,15 +706,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#challenges-to-playtesters" class="md-nav__link">
     Challenges to playtesters
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -722,6 +736,9 @@
                 
                 
                 <h1 id="app-instructions">App Instructions</h1>
+<h2 id="app-demo-21-minutes">App Demo (21 minutes)</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_B6vOUsNzXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2 id="introduction">Introduction</h2>
 <p>This is an introduction to help walk you through the experience of the AI Playtesting prototype. The game we target is called Slay the Spire, a turn-based combat card game. Card designers (users) can design their decks and cards, then train an AI to playtest their sets of cards. AI will provide statistics like win rate, frequency of each card, etc. to help users balance their cards.</p>
 <h2 id="workflow">Workflow</h2>
@@ -759,13 +776,16 @@
 <p>After the training is over, we can move on to the third part: playtest.</p>
 <p><img alt="alt_text" src="../images/guide/training3.png" title="training3" /></p>
 <h3 id="3-playtesting">3. <strong>Playtesting</strong>:</h3>
-<p>After training, we can run playtest to generate some statistics. Specify number of games to playtest, and select a trained model from the select bar on the third column, and then run playtest.</p>
+<p>After training, we can click on the playtest button to generate statistics. Specify number of games to playtest, and select a trained model from the select bar on the third column, and then run playtest.</p>
 <p><img alt="alt_text" src="../images/guide/playtesting.png" title="playtesting" /></p>
 <p>After playtesting is done, we can see statistics results as the graph below.</p>
-<p>The leftmost pie chart is the win rate that AI played. Average game length means how many turns a game goes on average. Average player/boss hp means when a game ends, how much is the player’s/boss’s hp on average over all games playtested.</p>
-<p>The rightmost bar chart shows various statistics for advanced designers.</p>
-<p><img alt="alt_text" src="../images/guide/playtesting_result.png" title="playtesting_result" /></p>
-<h3 id="challenges-to-playtesters">Challenges to playtesters</h3>
+<p>The leftmost pie chart is the win rate that AI played. Average game length means how many turns a game goes on average. </p>
+<p>The rightmost explanation button shows more details if designers want to know more.</p>
+<p><img alt="alt_text" src="../images/guide/playtest-win-rate.png" title="playtesting_result" /></p>
+<p>More statistics/data can be found in the playtest secion.</p>
+<p><img alt="alt_text" src="../images/guide/playtest-card-util.png" title="playtesting_result" /></p>
+<p><img alt="alt_text" src="../images/guide/playtest-heatmap.png" title="playtesting_result" /></p>
+<h2 id="challenges-to-playtesters">Challenges to playtesters</h2>
 <ol>
 <li>Construct a deck that can achieve 100% win rate. </li>
 <li>Construct a deck that achieves around 50% win rate. That being said, form a balanced level of difficulty for other players.</li>
@@ -789,7 +809,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../demo/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../introduction/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -798,19 +818,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Demo
+                Introduction Videos
               </div>
             </div>
           </a>
         
         
-          <a href="../game/Overview/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ai/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Overview
+                Progress of the AI
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

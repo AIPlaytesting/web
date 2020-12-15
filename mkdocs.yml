@@ -10,9 +10,8 @@ theme:
     repo: fontawesome/brands/github
 nav:
   - introduction.md
-  - demo.md
   - guide.md
-  # - ai.md
+  - ai.md
   # - takeaways.md
   - Game Dev along with AI:
     - game/Overview.md
@@ -39,7 +38,6 @@ nav:
     - blogs/week12.md
     - blogs/week13.md
     - blogs/week14.md
-    # - week15.md
 
 extra:
   social:

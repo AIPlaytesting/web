@@ -1,5 +1,7 @@
 # App Instructions
 
+## App Demo (21 minutes)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_B6vOUsNzXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Introduction
 
@@ -68,20 +70,25 @@ After the training is over, we can move on to the third part: playtest.
 
 
 ### 3. **Playtesting**: 
-After training, we can run playtest to generate some statistics. Specify number of games to playtest, and select a trained model from the select bar on the third column, and then run playtest.
+After training, we can click on the playtest button to generate statistics. Specify number of games to playtest, and select a trained model from the select bar on the third column, and then run playtest.
 
 ![alt_text](images/guide/playtesting.png "playtesting")
 
 After playtesting is done, we can see statistics results as the graph below.
 
-The leftmost pie chart is the win rate that AI played. Average game length means how many turns a game goes on average. Average player/boss hp means when a game ends, how much is the player’s/boss’s hp on average over all games playtested.
+The leftmost pie chart is the win rate that AI played. Average game length means how many turns a game goes on average. 
 
-The rightmost bar chart shows various statistics for advanced designers.
+The rightmost explanation button shows more details if designers want to know more.
 
-![alt_text](images/guide/playtesting_result.png "playtesting_result")
+![alt_text](images/guide/playtest-win-rate.png "playtesting_result")
 
+More statistics/data can be found in the playtest secion.
 
-### Challenges to playtesters
+![alt_text](images/guide/playtest-card-util.png "playtesting_result")
+
+![alt_text](images/guide/playtest-heatmap.png "playtesting_result")
+
+## Challenges to playtesters
 
 
 1. Construct a deck that can achieve 100% win rate. 
