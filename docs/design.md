@@ -43,7 +43,7 @@ Valuable feedback includes:
 To deliver that feedback, the very first thing we need to do is make sure that our AI knows how to play the game, and master the game.
 
 
-### The first deck that I provided:
+### The first deck that we provided:
 
 
 
@@ -84,7 +84,7 @@ After changing to the current deck, a random bot will not work in this situation
 Our AI finally got nearly 90% of the win rate on this deck, however, it is still not willing to play flex before other attack cards. In the designer’s mind, we thought that always playing flex at the beginning of the turn is an obvious move. The AI is not following that.
 
 
-### The second deck that I provided:
+### The second deck that we provided:
 
 
 
