@@ -1,4 +1,4 @@
-site_name: AI-Playtesting
+site_name: AI Playtesting
 theme:
   name: material
   features:
@@ -43,8 +43,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/AIPlaytesting/AIPA
-  generator: false
 
-copyright: Copyright &copy; 2020 AI-Playtesting
+
+copyright: Copyright &copy; 2020 AI Playtesting
 
 repo_url: https://github.com/AIPlaytesting/AIPA
