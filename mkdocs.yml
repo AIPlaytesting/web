@@ -8,6 +8,9 @@ theme:
   favicon: images/logo.png
   icon:
     repo: fontawesome/brands/github
+    
+edit_uri: ""
+
 nav:
   - introduction.md
   - guide.md
@@ -38,11 +41,18 @@ nav:
     - blogs/week12.md
     - blogs/week13.md
     - blogs/week14.md
+  - download.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/AIPlaytesting/AIPA
+      link: https://github.com/AIPlaytesting/AIPlaytesting.github.io
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
 
 
 copyright: Copyright &copy; 2020 AI Playtesting
